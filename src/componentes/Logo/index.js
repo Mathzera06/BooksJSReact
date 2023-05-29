@@ -1,0 +1,22 @@
+import logo from '../../images/logo.svg'
+import styled from 'styled-components'
+
+const LogoContainer = styled.div`
+  display: flex;
+  font-size: 30px;
+`
+
+const LogoImg = styled.img`
+  margin-right: 10px;
+`
+
+function Logo() {
+    return (
+        <LogoContainer>
+          <LogoImg src={logo} alt='Logo' ></LogoImg>
+          <p><strong>Empresa X</strong></p>
+        </LogoContainer>
+    )
+}
+export default Logo 
+// export default significa que estamos exportando essa determinada função criada para todos os nosso app
